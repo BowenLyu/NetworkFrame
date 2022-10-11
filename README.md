@@ -1,6 +1,6 @@
 # NetworkFrame
-The network frame for point cloud in implicit method.
+The network frame mainly for implicit method.
 
-Code is based on SAL, IGR, DeepSDF.
+Standard model now has MLP, SIREN, FFN models, it will be extended soon.
 
-The goal is to build a general extensible network frame for the following work.
+The goal is to build a general extensible network frame for deep learning work.
