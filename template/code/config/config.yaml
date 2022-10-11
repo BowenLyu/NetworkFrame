@@ -1,0 +1,46 @@
+dataio:
+  expname: test
+  exps_folder_name: exp
+  data_path: data/hole.xyz
+
+train:
+  batch_size: 2
+  nepoch: 10
+  points_batch: 4096
+  lr: 0.001
+  lr_decay: 0.5
+  step_size: 20
+  weight_decay: 1e-4
+  save_frequency: 500
+  num_workers: 4
+  eval_freq: 20
+  clip_grad: True
+
+plot:
+  resolution: 256
+  mc_value: 0.0
+  is_uniform_grid: True
+  verbose: False
+  save_html: True
+  save_ply: True
+  overwrite: True
+
+
+network:
+  num_point: 4096
+  nblocks: 4
+  nneighbor: 16
+  pc_dim: 3
+  input_dim: 3
+  output_dim: 3
+  transformer_dim: 512
+
+
+Siren:
+  dim_in: 3
+  dim_hidden: [256,256,256]
+  dim_out: 1
+  w0: 1.
+  w0_first: 30.
+  use_bias: True
+  
